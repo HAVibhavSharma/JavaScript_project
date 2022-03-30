@@ -1,55 +1,94 @@
-/* h1{
-    color:red;
-    font-size:20px;
-    font-style: italic;
-} */
-.line{
-    /* font-size:50px; */
-    /* size: 20px; */
-    font-style: italic;
-    
+.Flex-Container{
+    /* border:2px solid red; */
+    display:flex;
+    height:700px;
+    justify-content: center;
+    align-items: center;
 }
-/* .line.one{
-     margin-top:10px; 
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,93,0.8029805672268908) 35%, rgba(0,212,255,1) 100%);
 }
- .line.two{
-    margin-top:50px;/*
-    margin-left:400px;
-    border-color: brown;
-    background-color:blue;
-    background-color: aqua; 
-} */
-.flex-container{
-    
-    border:2px solid brown;
-    /* height: 50vh;
-    /* flex-direction: row-reverse; */
-    /* justify-content: center;
-    align-items: center; 
-    flex-direction: row;
-    justify-content: center; */
- 
+.number{
+    font-size: 30px;
+}
+.Clock-Container {
+    display: block;
+    height: 500px;
+    width: 500px;
+    background-color: #bbb;
+    border-radius: 50%;
+    position:relative;
+    /* display: inline-block; */
+  }
+.Clock-Container .number{
+    /* --rotation:0; */
+    position: absolute;
+    width:100%;
+    height:100%;
+    text-align: center;
+    /* transform: rotate(--rotation); */
+}
+.number.number1{
+    transform: rotate(30deg);
+}
+.number.number2{
+    transform: rotate(60deg);
+}
+.number.number3{
+    transform: rotate(90deg);
+}
+.number.number4{
+    transform: rotate(120deg);
+}
+.number.number5{
+    transform: rotate(150deg);
+}
+.number.number6{
+    transform: rotate(180deg);
+}
+.number.number7{
+    transform: rotate(210deg);
+}
+.number.number8{
+    transform: rotate(240deg);
+}
+.number.number9{
+    transform: rotate(270deg);
+}
+.number.number10{
+    transform: rotate(300deg);
+}
+.number.number11{
+    transform: rotate(330deg);
+}
+.number.number12{
+    transform: rotate(360deg);
+}
+.Clock-Container .Hand{
+    /* position: absolute;
+    width:40%;
+    height:4px;
+    padding:2px;
+    left:50%;
+    bottom:50%;
+    background-color: black;
+   transform-origin: bottom; */
+   position: absolute;
+    width:4px;
+    height: 40%;
+    left:50%;
+    bottom:50%;
+    background-color: black;
+   transform-origin: bottom;
+}
+.Hand.Hour{
 
+    transform: translateX(-50%) rotate(150deg);
 }
-.flex{
-    /* margin:20px;*/
-    background-color: red;
-    border:2px solid black ;
-    height:122px;
-    width: 122px; 
+.Hand.Min{
+    transform: translateX(-50%) rotate(120deg);
 }
-.item1{
-    align-self: center;
-}
-.box{
-    position:relative;
-    top:20px;
-}
-.box1{
-    position:relative;
-    top:50px;
-}
-.box2{
-    position:relative;
-    top:300px;
+.Hand.Sec{
+   
 }
