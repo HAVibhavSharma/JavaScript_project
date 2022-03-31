@@ -76,19 +76,42 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,9,93,0.8029805672
    transform-origin: bottom; */
    position: absolute;
     width:4px;
-    height: 40%;
+    height: 50%;
     left:50%;
     bottom:50%;
     background-color: black;
    transform-origin: bottom;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.Clock-Container::after{
+    content: "";
+    position:absolute;
+    background-color: black;
+    top:50%;
+    bottom:50%;
+    left:50%;
+    height:15px;
+    width:15px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    z-index: 11px;
 }
 .Hand.Hour{
-
-    transform: translateX(-50%) rotate(150deg);
+    z-index: 2px;
+    width:10px;
+    height:45%;
+    transform: translateX(-50%) rotate(0deg);
 }
 .Hand.Min{
-    transform: translateX(-50%) rotate(120deg);
+    z-index: 4px;
+    height:40%;
+    transform: translateX(-50%) rotate(0deg);
 }
 .Hand.Sec{
-   
+    z-index: 8px;
+    width:2px;
+    height: 35%;
+    background-color: red;
+    transform: translateX(-50%) rotate(0deg);
 }
